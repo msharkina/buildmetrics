@@ -29,12 +29,12 @@ repositories {
 dependencies {
 }
 
-group = "com.mshark.buildmetrics"
+group = "com.mshark.plugin"
 version = "0.1-SNAPSHOT"
 gradlePlugin {
     plugins {
         create("buildmetricsGradlePlugin") {
-            id = "com.mshark.buildmetrics"
+            id = "buildmetrics"
             displayName = "Build metrics gradle plugin."
             description = "Collects build metrics and writes them to a file."
             implementationClass = "com.mshark.buildmetrics.BuildMetricsPlugin"
